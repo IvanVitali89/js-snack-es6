@@ -13,7 +13,7 @@ const bicycle = [{
     peso: 16
 }, {
     nome: 'bici3',
-    peso: 50
+    peso: 5
 }, {
     nome: 'bici4',
     peso: 32
@@ -22,14 +22,13 @@ const bicycle = [{
     peso: 25
 }]
 
-let pesoMAggiore = bicycle[0].peso;
-;
+
+let pesoMinore = bicycle[0].peso;
+
 
 
 for (let i = 1; i < bicycle.length; i++) {
-    if ( pesoMAggiore < bicycle[i].peso){
-        pesoMAggiore = bicycle[i].peso
-    }
-}
-
-console.log(pesoMAggiore);
+    if ( pesoMinore > bicycle[i].peso)
+        pesoMinore = bicycle[i].peso
+} 
+console.log(pesoMinore);
